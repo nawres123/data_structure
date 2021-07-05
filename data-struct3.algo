@@ -1,0 +1,22 @@
+ALGORITHM data_struct_3
+VAR
+    tab1 : ARRAY_OF INTEGER [1,4,9,7];
+    tab2 : ARRAY_OF INTEGER [3,2,4,7,8];
+    i,j,sum,n,m : INTEGER;
+BEGIN
+sum:=0;
+    n:=tab1.length , m:=tab2.length;
+    FOR i FROM 0 TO n-1 STEP 1  DO
+
+    FOR j FROM 0 TO m-1 STEP 1 DO
+
+        IF (tab1[i])<> tab2[j])
+            tab1[i]:=0;
+            tab2[j]:=0;
+         END_IF
+        END_FOR
+        sum:= sum+tab1[i];
+    END_FOR
+    
+    writeln(sum);
+END
